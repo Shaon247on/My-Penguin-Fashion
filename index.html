@@ -1,22 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Penguin Fashion</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font babas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        .font-babes {
+            font-family: "Bebas Neue", sans-serif;
+        }
+
+        .font-roboto {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
     <!-- <link rel="stylesheet" href="style/style.css"> -->
 </head>
+
 <body>
-    <header>
-
+    <header class="bg-[#FFFBF0]">
+        <!-- start of nav section -->
+        <nav class="flex flex-col lg:flex-row gap-3 lg:justify-between items-center mt-12 mx-32">
+            <div>
+                <img class="w-96 md:w-56" src="icons/logo.png" alt="">
+            </div>
+            <div>
+                <ul class="flex gap-4 flex-col md:flex-row">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- end of nav section -->
+        <!-- start of banner section -->
+        <section>
+            <div class="flex flex-col md:flex-row gap-4 md:gap-36 justify-center items-center mx-10 md:mx-32 mt-4 ">
+                <div>
+                    <h2
+                        class=" text-[45px] md:text-[75px] font-babes w-[300px] md:w-[400px] leading-[50px] md:leading-[85px] px-5 md:px-0">
+                        <span class="text-[#FABE4C]">Be the
+                            Penguins</span>
+                        of Winter</h2>
+                    <p class="w-[350px] mx2 mb-6 text-[#3E3E3E] font-roboto px-5 md:px-0">Lorem Ipsum is simply dummy
+                        text of the printing
+                        and typesetting industry.</p>
+                    <div class="px-5 md:px-0">
+                        <button
+                            class="bg-gradient-to-b from-[#A4BC46] to-[#85A019] w-44 h-[60px] rounded-lg flex items-center justify-center gap-2 text-white font-roboto">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6 text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                            BUY NOW</button>
+                    </div>
+                </div>
+                <div class="mr-2 sm:w-full p-10"><img class="w-full" src="images/model.png" alt=""></div>
+            </div>
+        </section>
+        <!-- end of banner section -->
     </header>
-    <main>
-
+    <!-- end of header section -->
+    <!-- start of main section -->
+    <main class=" mx-32 mt-11">
+        <section>
+            <!-- start of woman section -->          
+            <h1 class="p-5 text-[24px] md:text-[48px] font-babes text-center">WoMan Jacket</h1>       
+            <div class="grid grid-rows-1 md:grid-cols-3 gap-7 justify-center md:justify-normal">
+                <div class="card">                    
+                    <div class="w-[360px] h-[565px] p-5">
+                        <div class="flex justify-center">
+                            <img class="w-[290px] p-5" src="images/jacket-1.png" alt="">
+                        </div>
+                        <h2 class=" text-[#363958] text-2xl font-roboto mt-7 mb-2 font-bold">Yellow Coat Jacket </h2>
+                        <p class="text-[#3E3E3E] font-roboto">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.</p>
+                        <div class="flex justify-between items-center my-2">
+                            <h3 class=" font-roboto text-4xl text-[#FABE4C]">$234</h3>
+                            <button
+                                class="bg-gradient-to-b from-[#A4BC46] to-[#85A019] w-44 h-[60px] rounded-lg flex items-center justify-center gap-2 text-white font-roboto">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg>
+                                BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-2">                    
+                    <div class="w-[360px] h-[565px] p-5">
+                        <div class="flex justify-center">
+                            <img class="w-[290px] p-5" src="images/jacket-2.png" alt="">
+                        </div>
+                        <h2 class=" text-[#363958] text-2xl font-roboto mt-7 mb-2 font-bold">Yellow Coat Jacket </h2>
+                        <p class="text-[#3E3E3E] font-roboto">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.</p>
+                        <div class="flex justify-between items-center my-2">
+                            <h3 class=" font-roboto text-4xl text-[#FABE4C]">$234</h3>
+                            <button
+                                class="bg-gradient-to-b from-[#A4BC46] to-[#85A019] w-44 h-[60px] rounded-lg flex items-center justify-center gap-2 text-white font-roboto">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg>
+                                BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-3">                   
+                    <div class="w-[360px] h-[565px] p-5">
+                        <div class="flex justify-center">
+                            <img class="w-[290px] p-5" src="images/jacket-3.png" alt="">
+                        </div>
+                        <h2 class=" text-[#363958] text-2xl font-roboto mt-7 mb-2 font-bold">Yellow Coat Jacket </h2>
+                        <p class="text-[#3E3E3E] font-roboto">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.</p>
+                        <div class="flex justify-between items-center my-2">
+                            <h3 class=" font-roboto text-4xl text-[#FABE4C]">$234</h3>
+                            <button
+                                class="bg-gradient-to-b from-[#A4BC46] to-[#85A019] w-44 h-[60px] rounded-lg flex items-center justify-center gap-2 text-white font-roboto">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg>
+                                BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+        <!-- end of woman section   -->
+        <!-- start of men section -->
+        <section class="mt-5">            
+            <h1 class="text-[32px] md:text-[48px] font-babes">Men Jacket</h1>         
+            <div class="grid grid-rows-1 md:grid-cols-3 gap-7 justify-center md:justify-normal">
+                <div class="card">                    
+                    <div class="w-[360px] h-[565px] p-5">
+                        <div class="flex justify-center">
+                            <img class="w-[290px] p-5" src="images/jacket-4.png" alt="">
+                        </div>
+                        <h2 class=" text-[#363958] text-2xl font-roboto mt-7 mb-2 font-bold">Yellow Coat Jacket </h2>
+                        <p class="text-[#3E3E3E] font-roboto">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.</p>
+                        <div class="flex justify-between items-center my-2">
+                            <h3 class=" font-roboto text-4xl text-[#FABE4C]">$234</h3>
+                            <button
+                                class="bg-gradient-to-b from-[#A4BC46] to-[#85A019] w-44 h-[60px] rounded-lg flex items-center justify-center gap-2 text-white font-roboto">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg>
+                                BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-2">                    
+                    <div class="w-[360px] h-[565px] p-5">
+                        <div class="flex justify-center">
+                            <img class="w-[290px] p-5" src="images/jacket-5.png" alt="">
+                        </div>
+                        <h2 class=" text-[#363958] text-2xl font-roboto mt-7 mb-2 font-bold">Yellow Coat Jacket </h2>
+                        <p class="text-[#3E3E3E] font-roboto">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.</p>
+                        <div class="flex justify-between items-center my-2">
+                            <h3 class=" font-roboto text-4xl text-[#FABE4C]">$234</h3>
+                            <button
+                                class="bg-gradient-to-b from-[#A4BC46] to-[#85A019] w-44 h-[60px] rounded-lg flex items-center justify-center gap-2 text-white font-roboto">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg>
+                                BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-3">                   
+                    <div class="w-[360px] h-[565px] p-5">
+                        <div class="flex justify-center">
+                            <img class="w-[290px] p-5" src="images/jacket-6.png" alt="">
+                        </div>
+                        <h2 class=" text-[#363958] text-2xl font-roboto mt-7 mb-2 font-bold">Yellow Coat Jacket </h2>
+                        <p class="text-[#3E3E3E] font-roboto">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.</p>
+                        <div class="flex justify-between items-center my-2">
+                            <h3 class=" font-roboto text-4xl text-[#FABE4C]">$234</h3>
+                            <button
+                                class="bg-gradient-to-b from-[#A4BC46] to-[#85A019] w-44 h-[60px] rounded-lg flex items-center justify-center gap-2 text-white font-roboto">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg>
+                                BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>   
+        <!-- end of men section -->
+        <section class="mt-12">
+            <div class="flex flex-col-reverse md:flex-row justify-center md:justify-between items-center gap-3">
+                <div class="flex flex-col gap-6 md:gap-4 mt-8">
+                    <div class="mx-auto md:mx-0 w-[345px] md:w-[430px] h-[165px] md:h-[110px] flex flex-col md:flex-row gap-0 md:gap-3 items-center rounded-2xl text-center md:text-start">
+                        <img class=" w-[70px] h-[80px] p-2" src="icons/house.png" alt="">
+                        <div>
+                            <h2 class=" text-[#363958] font-roboto font-bold">Find the Perfect Fit</h2>
+                            <p>Everybody is different, which is why we
+                                offer styles for every body.</p>
+                        </div>
+                    </div>
+                    <div class="mx-auto md:mx-0 w-[345px] md:w-[430px] h-[165px] md:h-[110px] flex flex-col md:flex-row gap-0 md:gap-3 items-center rounded-2xl text-center md:text-start">
+                        <img class=" w-[70px] h-[80px] p-2" src="icons/box.png" alt="">
+                        <div>
+                            <h2 class=" text-[#363958] font-roboto font-bold">Free Exchanges</h2>
+                            <p>One of the many reasons you can shop
+                                with peace of mind.</p>
+                        </div>
+                    </div>
+                    <div class="mx-auto md:mx-0 w-[345px] md:w-[430px] h-[165px] md:h-[110px] flex flex-col md:flex-row gap-0 md:gap-3 items-center rounded-2xl text-center md:text-start">
+                        <img class=" w-[70px] h-[80px] p-2" src="icons/question.png" alt="">
+                        <div>
+                            <h2 class=" text-[#363958] font-roboto font-bold">Contact Our Seller</h2>
+                            <p>They are here to help you. That's quite 
+                                literally what we pay them for.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[300px] md:w-[500px] h-[200px] md:h-[300px]">
+                    <img class=" w-full h-full" src="images/shopping.png" alt="">
+                </div>
+            </div>
+        </section>
     </main>
+    <!-- end of main section -->
     <footer>
 
     </footer>
-    
+
 </body>
+
 </html>
